@@ -17,29 +17,40 @@ export const siteContent = {
   projects: [
     {
       title: "ChloeLabs",
-      kind: "Learning platform",
-      status: "Growing",
+      kind: "Educational product",
+      status: "Active",
       description:
-        "Byte-sized lessons that make AI and cloud computing inviting for young learners—and useful for the adults learning alongside them.",
-      tags: ["Learning design", "AI literacy", "Cloud"],
-      href: "https://chloelabs.github.io/chloelabs/",
+        "A learning platform that introduces young people to AI, cloud computing, and computational thinking through short, approachable projects.",
+      tags: ["AI literacy", "Cloud", "Learning design"],
+      href: "https://chloelabs.io",
       linkLabel: "Visit ChloeLabs",
     },
     {
-      title: "The Clarity Kit",
-      kind: "Open experiment",
+      title: "Agentic AI Workshop",
+      kind: "Open-source curriculum",
       status: "In development",
       description:
-        "A small collection of prompts and visual patterns for explaining technical systems without flattening what makes them interesting.",
-      tags: ["Writing", "Sensemaking", "Tools"],
+        "A hands-on notebook series that helps learners move from conversational AI to tool-using agents, research workflows, memory, and multi-step reasoning.",
+      tags: ["Agents", "Python", "Jupyter"],
     },
     {
-      title: "Tiny Cloud Lab",
-      kind: "Prototype",
-      status: "In development",
+      title: "AI Enablement at Scale",
+      kind: "Program leadership",
+      status: "Ongoing",
       description:
-        "A browser-based playground where curious beginners can understand cloud architecture by arranging friendly, tangible building blocks.",
-      tags: ["Prototype", "Cloud", "Play"],
+        "National programs, workshops, and technical resources that help researchers and institutions build practical capability in AI and advanced computing.",
+      tags: ["Strategy", "Research", "Education"],
+    },
+    {
+      title: "AI Strategy & Enablement",
+      kind: "Advisory",
+      status: "Available",
+      description:
+        "Advisory support for universities, research organizations, nonprofits, and technical teams developing practical AI adoption strategies, learning programs, and agentic workflows.",
+      tags: ["AI strategy", "Enablement", "Workshops"],
+      href:
+        "mailto:amandach.tan@gmail.com?subject=AI%20Strategy%20%26%20Enablement%20Inquiry",
+      linkLabel: "Get in touch",
     },
   ],
   now: {

@@ -7,6 +7,7 @@ export default function Home() {
   const { profile, projects, now } = siteContent;
   const basePath = process.env.BASE_PATH ?? "";
   const nowIcons = ["▤", ">_", "✦"];
+  const projectSymbols = [">_", "◎", "↗"];
 
   return (
     <main>
@@ -63,10 +64,11 @@ export default function Home() {
       <section className="section-shell section" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
-          <h2>Things I’m building and tending.</h2>
+          <h2>Work I’m building and leading.</h2>
           <p>
-            A mix of educational products, practical experiments, and systems
-            that help people become more confident with technology.
+            Practical AI products, technical learning experiences, national
+            programs, and advisory work designed to help people and
+            organizations use emerging technology with confidence.
           </p>
         </div>
         <div className="project-grid">
@@ -84,6 +86,11 @@ export default function Home() {
                   width={380}
                   height={380}
                 />
+              )}
+              {index > 0 && (
+                <div className="card-symbol" aria-hidden="true">
+                  {projectSymbols[index - 1]}
+                </div>
               )}
               <h3>{project.title}</h3>
               <p>{project.description}</p>
