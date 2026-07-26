@@ -5,7 +5,6 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 
 export default function Home() {
   const { profile, projects, now } = siteContent;
-  const basePath = process.env.BASE_PATH ?? "";
   const nowIcons = ["▤", ">_", "✦"];
   const projectSymbols = [">_", "◎", "↗"];
 
@@ -20,7 +19,7 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a
-            href={`${basePath}/Amanda_Tan_Resume.pdf`}
+            href="/Amanda_Tan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -49,7 +48,7 @@ export default function Home() {
         </div>
         <figure className="hero-art">
           <Image
-            src={`${basePath}/images/hero-studio.png`}
+            src="/images/hero-studio.png"
             alt="An illustrated desk where clouds, circuits, plants, and ideas grow from a laptop and notebook"
             width={1536}
             height={1024}
@@ -88,7 +87,7 @@ export default function Home() {
               {index === 0 && (
                 <Image
                   className="card-illustration"
-                  src={`${basePath}/images/icon-projects.png`}
+                  src="/images/icon-projects.png"
                   alt="ChloeLabs educational project illustration"
                   width={380}
                   height={380}
@@ -207,7 +206,7 @@ export default function Home() {
         </div>
         <aside className="now-card">
           <Image
-            src={`${basePath}/images/tan-headshot-dec2025.jpeg`}
+            src="/images/tan-headshot-dec2025.jpeg"
             alt="Headshot of Amanda Tan"
             width={200}
             height={200}
@@ -259,7 +258,7 @@ export default function Home() {
             </a>
           ))}
           <a
-            href={`${basePath}/Amanda_Tan_Resume.pdf`}
+            href="/Amanda_Tan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

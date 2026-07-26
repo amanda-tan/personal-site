@@ -12,30 +12,25 @@ const serif = Newsreader({
   subsets: ["latin"],
 });
 
-const basePath = process.env.BASE_PATH ?? "";
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://amanda-tan.github.io/personal-site/";
-const siteUrlObject = new URL(siteUrl);
-const deploymentPath =
-  basePath || siteUrlObject.pathname.replace(/\/$/, "");
-const socialImageUrl = new URL(
-  `${deploymentPath}/og.png`,
-  siteUrlObject.origin
-).toString();
+const siteUrl = "https://amanda-tan.io";
+const socialImageUrl = `${siteUrl}/og.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: siteUrl,
+  },
   title: "Amanda Tan — Builder, educator, curious human",
   description:
     "Amanda Tan makes complex technology feel possible through thoughtful products, clear writing, and approachable learning experiences.",
   icons: {
-    icon: `${basePath}/images/icon-projects.png`,
-    shortcut: `${basePath}/images/icon-projects.png`,
+    icon: "/images/icon-projects.png",
+    shortcut: "/images/icon-projects.png",
   },
   openGraph: {
     title: "Amanda Tan",
     description: "Making complex technology feel possible.",
+    url: siteUrl,
     images: [{ url: socialImageUrl, width: 1792, height: 1024 }],
     type: "website",
   },
@@ -44,6 +39,10 @@ export const metadata: Metadata = {
     title: "Amanda Tan",
     description: "Making complex technology feel possible.",
     images: [socialImageUrl],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

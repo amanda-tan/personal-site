@@ -28,11 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build static site
-        env:
-          # Change this if your repository is not named "personal-site".
-          # For a username.github.io repository, use an empty value.
-          BASE_PATH: /personal-site
         run: npm run build
+      - name: Add custom domain
+        run: cp CNAME out/CNAME
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
