@@ -82,7 +82,7 @@ export default function Home() {
             <article
               className={`project-card card-${index + 1}${
                 index === 1 ? " agentic-card" : ""
-              }`}
+              }${index < 2 ? " featured-project-card" : ""}`}
               key={project.title}
             >
               <div className="card-topline">
@@ -119,17 +119,14 @@ export default function Home() {
               </ul>
               {"href" in project && (
                 <a
-                  className={
-                    index === 1
-                      ? "button button-primary project-primary-cta"
-                      : undefined
-                  }
+                  className={index < 2 ? "project-cta" : undefined}
                   href={project.href}
                   {...(project.href.startsWith("http")
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
                 >
-                  {project.linkLabel} <Arrow />
+                  {project.linkLabel}{" "}
+                  {index < 2 ? <span aria-hidden="true">→</span> : <Arrow />}
                 </a>
               )}
               <footer className="project-focus">
