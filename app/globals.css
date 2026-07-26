@@ -164,7 +164,7 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 .assumption-note { border-left: 3px solid var(--apricot); font-size: 0.8rem !important; margin-top: 30px; padding-left: 15px; }
 .assumption-note code { background: rgba(23, 63, 59, 0.08); padding: 2px 5px; }
 .now-card { align-self: start; background: var(--teal); border-radius: 50% 50% 45% 55% / 44% 47% 53% 56%; color: var(--cream); padding: 48px; }
-.now-card img { border-radius: 50%; margin: -105px auto 22px; width: 170px; }
+.now-card img { border-radius: 50%; height: 170px; margin: -105px auto 22px; object-fit: cover; width: 170px; }
 .now-card .eyebrow { color: var(--apricot); }
 .now-card h3 { font-family: var(--font-serif), serif; font-size: 2rem; font-weight: 500; }
 .now-card li { line-height: 1.55; margin: 12px 0; }

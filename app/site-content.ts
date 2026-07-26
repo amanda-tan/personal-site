@@ -1,17 +1,17 @@
 export const siteContent = {
   profile: {
-    email: "hello@example.com",
+    email: "amandach.tan@gmail.com",
     intro:
       "I explore how AI, cloud computing, and thoughtful learning experiences can give more people the confidence to build. I like ideas that are rigorous underneath and welcoming on the surface.",
     about: [
-      "I’m Amanda, a technology builder and educator interested in the space between a powerful idea and the moment it finally clicks for someone.",
-      "My work blends systems thinking, clear communication, and playful experimentation. ChloeLabs is one expression of that: a place where young learners can meet big technical ideas in small, approachable pieces.",
-      "Away from a screen, I’m usually collecting questions, refining a half-finished explanation, or noticing how good design makes unfamiliar things feel a little more possible.",
+      "I lead AI enablement programs and build practical tools that help people understand, adopt, and use emerging technology. My work sits at the intersection of artificial intelligence, cloud computing, research, and education.",
+      "I have led national programs, developed technical curriculum, supported researchers and institutions, and built hands-on learning experiences designed to make complex systems usable. I care about work that is rigorous underneath and welcoming on the surface.",
+      "I am currently developing ChloeLabs, an educational project that introduces young learners to AI, cloud computing, and computational thinking through small, approachable projects.",
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/chloelabs" },
-      { label: "LinkedIn", href: "#" },
-      { label: "Email", href: "mailto:hello@example.com" },
+      { label: "GitHub", href: "https://github.com/amanda-tan" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/atanlehr/" },
+      { label: "Email", href: "mailto:amandach.tan@gmail.com" },
     ],
   },
   projects: [
@@ -28,48 +28,18 @@ export const siteContent = {
     {
       title: "The Clarity Kit",
       kind: "Open experiment",
-      status: "Draft",
+      status: "In development",
       description:
         "A small collection of prompts and visual patterns for explaining technical systems without flattening what makes them interesting.",
       tags: ["Writing", "Sensemaking", "Tools"],
-      href: "#notes",
-      linkLabel: "See the thinking",
     },
     {
       title: "Tiny Cloud Lab",
       kind: "Prototype",
-      status: "Exploring",
+      status: "In development",
       description:
         "A browser-based playground where curious beginners can understand cloud architecture by arranging friendly, tangible building blocks.",
       tags: ["Prototype", "Cloud", "Play"],
-      href: "mailto:hello@example.com?subject=Tiny%20Cloud%20Lab",
-      linkLabel: "Ask me about it",
-    },
-  ],
-  notes: [
-    {
-      category: "Teaching",
-      readTime: "4 min",
-      title: "The difference between simple and simplistic",
-      summary:
-        "Good explanations preserve the shape of an idea while lowering the step needed to enter it.",
-      href: "#",
-    },
-    {
-      category: "AI literacy",
-      readTime: "6 min",
-      title: "What I want a young learner to know about AI",
-      summary:
-        "Not a vocabulary list—a durable set of intuitions about data, patterns, judgment, and agency.",
-      href: "#",
-    },
-    {
-      category: "Building",
-      readTime: "3 min",
-      title: "Small experiments are a form of strategy",
-      summary:
-        "A working sketch often reveals more than another week spent perfecting the plan.",
-      href: "#",
     },
   ],
   now: {

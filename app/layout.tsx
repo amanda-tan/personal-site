@@ -12,6 +12,8 @@ const serif = Newsreader({
   subsets: ["latin"],
 });
 
+const basePath = process.env.BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ??
@@ -21,8 +23,8 @@ export const metadata: Metadata = {
   description:
     "Amanda Tan makes complex technology feel possible through thoughtful products, clear writing, and approachable learning experiences.",
   icons: {
-    icon: "/images/icon-projects.png",
-    shortcut: "/images/icon-projects.png",
+    icon: `${basePath}/images/icon-projects.png`,
+    shortcut: `${basePath}/images/icon-projects.png`,
   },
   openGraph: {
     title: "Amanda Tan",

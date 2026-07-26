@@ -4,7 +4,8 @@ import { siteContent } from "./site-content";
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 export default function Home() {
-  const { profile, projects, notes, now } = siteContent;
+  const { profile, projects, now } = siteContent;
+  const basePath = process.env.BASE_PATH ?? "";
 
   return (
     <main>
@@ -15,7 +16,6 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
-          <a href="#notes">Notes</a>
           <a href="#about">About</a>
           <a className="nav-cta" href={`mailto:${profile.email}`}>
             Say hello <Arrow />
@@ -36,14 +36,11 @@ export default function Home() {
             <a className="button button-primary" href="#work">
               Explore my work <span aria-hidden="true">↓</span>
             </a>
-            <a className="text-link" href="#notes">
-              Read my field notes <Arrow />
-            </a>
           </div>
         </div>
         <figure className="hero-art">
           <Image
-            src="/images/hero-studio.png"
+            src={`${basePath}/images/hero-studio.png`}
             alt="An illustrated desk where clouds, circuits, plants, and ideas grow from a laptop and notebook"
             width={1536}
             height={1024}
@@ -81,7 +78,7 @@ export default function Home() {
               {index === 0 && (
                 <Image
                   className="card-illustration"
-                  src="/images/icon-projects.png"
+                  src={`${basePath}/images/icon-projects.png`}
                   alt=""
                   width={380}
                   height={380}
@@ -92,45 +89,13 @@ export default function Home() {
               <ul className="tag-list" aria-label={`${project.title} topics`}>
                 {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
               </ul>
-              <a href={project.href}>
-                {project.linkLabel} <Arrow />
-              </a>
+              {"href" in project && (
+                <a href={project.href}>
+                  {project.linkLabel} <Arrow />
+                </a>
+              )}
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="notes-section" id="notes">
-        <div className="section-shell notes-layout">
-          <div className="notes-intro">
-            <Image
-              src="/images/icon-notes.png"
-              alt=""
-              width={220}
-              height={220}
-            />
-            <p className="eyebrow">Field notes</p>
-            <h2>Learning in public.</h2>
-            <p>
-              Short, useful observations about technology, teaching, and the
-              quieter craft of making difficult things understandable.
-            </p>
-          </div>
-          <div className="note-list">
-            {notes.map((note) => (
-              <article key={note.title}>
-                <div>
-                  <span>{note.category}</span>
-                  <span>{note.readTime}</span>
-                </div>
-                <h3>{note.title}</h3>
-                <p>{note.summary}</p>
-                <a href={note.href} aria-label={`Read ${note.title}`}>
-                  Read note <Arrow />
-                </a>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -139,13 +104,14 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <h2>Curiosity is my favorite working method.</h2>
           {profile.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-          <p className="assumption-note">
-            This biography is a thoughtful first draft based on the work shared
-            in this conversation. Replace it in <code>app/site-content.ts</code>.
-          </p>
         </div>
         <aside className="now-card">
-          <Image src="/images/icon-now.png" alt="" width={200} height={200} />
+          <Image
+            src={`${basePath}/images/tan-headshot-dec2025.jpeg`}
+            alt="Headshot of Amanda Tan"
+            width={200}
+            height={200}
+          />
           <p className="eyebrow">Now / {now.updated}</p>
           <h3>What has my attention</h3>
           <ul>
