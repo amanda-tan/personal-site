@@ -6,7 +6,7 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 export default function Home() {
   const { profile, projects, now } = siteContent;
   const nowIcons = ["▤", ">_", "✦"];
-  const projectSymbols = [">_", "◎", "↗"];
+  const projectSymbols = ["◎", "↗"];
 
   return (
     <main>
@@ -79,7 +79,12 @@ export default function Home() {
         </div>
         <div className="project-grid">
           {projects.map((project, index) => (
-            <article className={`project-card card-${index + 1}`} key={project.title}>
+            <article
+              className={`project-card card-${index + 1}${
+                index === 1 ? " agentic-card" : ""
+              }`}
+              key={project.title}
+            >
               <div className="card-topline">
                 <span>{project.kind}</span>
                 <span>{project.status}</span>
@@ -93,9 +98,18 @@ export default function Home() {
                   height={380}
                 />
               )}
-              {index > 0 && (
+              {index === 1 && (
+                <Image
+                  className="card-illustration"
+                  src="/images/agentic-ai-workshop.svg"
+                  alt="An open notebook connected to AI tool nodes in a workflow"
+                  width={380}
+                  height={380}
+                />
+              )}
+              {index > 1 && (
                 <div className="card-symbol" aria-hidden="true">
-                  {projectSymbols[index - 1]}
+                  {projectSymbols[index - 2]}
                 </div>
               )}
               <h3>{project.title}</h3>
@@ -106,7 +120,7 @@ export default function Home() {
               {"href" in project && (
                 <a
                   className={
-                    "notebookCoverage" in project
+                    index === 1
                       ? "button button-primary project-primary-cta"
                       : undefined
                   }
@@ -117,16 +131,6 @@ export default function Home() {
                 >
                   {project.linkLabel} <Arrow />
                 </a>
-              )}
-              {"notebookCoverage" in project && (
-                <div className="project-secondary-detail">
-                  <p>Notebook series covering:</p>
-                  <ul>
-                    {project.notebookCoverage.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
               )}
               <footer className="project-focus">
                 <h4>Current Focus</h4>

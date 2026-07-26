@@ -162,10 +162,8 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 .project-card p { line-height: 1.55; }
 .project-card > a { font-weight: 800; margin-top: 22px; }
 .project-card > .project-primary-cta { align-self: flex-start; color: white; }
-.project-secondary-detail { margin-top: 14px; }
-.project-secondary-detail p { font-size: 0.82rem; font-weight: 800; margin: 0 0 5px; }
-.project-secondary-detail ul { line-height: 1.5; margin: 0; padding-left: 18px; }
-.project-secondary-detail li { font-size: 0.8rem; }
+.agentic-card > .project-primary-cta { padding: 11px 16px; }
+.agentic-card .project-focus { margin-top: 0; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 14px 0 0; padding: 0; }
 .tag-list li { border: 1px solid currentColor; border-radius: 999px; font-size: 0.7rem; font-weight: 700; padding: 5px 9px; }
 .project-focus { border-top: 1px solid currentColor; margin-top: 24px; padding-top: 18px; }

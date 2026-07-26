@@ -38,13 +38,7 @@ export const siteContent = {
         "A hands-on notebook series that helps learners move from conversational AI to tool-using agents, research workflows, memory, and multi-step reasoning.",
       tags: ["Agents", "Python", "Jupyter"],
       href: "https://github.com/ms-cc-org/AGENTIC-AI-Workshop",
-      linkLabel: "Explore the Repository",
-      notebookCoverage: [
-        "conversational AI",
-        "tool use",
-        "memory",
-        "multi-step reasoning",
-      ],
+      linkLabel: "Explore Repository",
       focus: [
         "Notebook development",
         "Workshop curriculum",
