@@ -164,6 +164,22 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 14px 0 0; padding: 0; }
 .tag-list li { border: 1px solid currentColor; border-radius: 999px; font-size: 0.7rem; font-weight: 700; padding: 5px 9px; }
 
+.consulting-section { background: var(--paper); border-block: 1px solid var(--line); }
+.consulting-inner { display: grid; gap: 72px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.consulting-intro h2 {
+  font-family: var(--font-serif), serif;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  margin: 0 0 28px;
+}
+.consulting-intro > p:last-child { font-size: 1.08rem; line-height: 1.7; margin: 0; max-width: 560px; }
+.service-list article { border-top: 1px solid var(--ink); padding: 24px 0 26px; }
+.service-list h3 { font-family: var(--font-serif), serif; font-size: 1.7rem; font-weight: 500; margin: 0 0 8px; }
+.service-list p { line-height: 1.6; margin: 0; }
+.service-list .button { margin-top: 18px; }
+
 .notes-section { background: var(--paper); border-block: 1px solid var(--line); padding-block: 112px; }
 .notes-layout { display: grid; gap: 80px; grid-template-columns: 0.72fr 1.28fr; }
 .notes-intro img { border-radius: 50%; margin-bottom: 28px; width: 150px; }
@@ -243,7 +259,7 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 
 @media (max-width: 900px) {
   nav a:not(.nav-cta) { display: none; }
-  .hero, .notes-layout, .about-grid { grid-template-columns: 1fr; }
+  .hero, .notes-layout, .consulting-inner, .about-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 80px; }
   .hero-art { width: min(680px, 100%); }
   .project-grid { grid-template-columns: 1fr 1fr; }

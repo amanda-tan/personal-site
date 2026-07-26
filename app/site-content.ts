@@ -2,7 +2,7 @@ export const siteContent = {
   profile: {
     email: "amandach.tan@gmail.com",
     intro:
-      "I explore how AI, cloud computing, and thoughtful learning experiences can give more people the confidence to build. I like ideas that are rigorous underneath and welcoming on the surface.",
+      "I help organizations build practical capability in AI through strategy, technical education, and tools people can actually use.",
     about: [
       "I lead AI enablement programs that help researchers, educators, and organizations turn emerging technology into practical capability.",
       "My work sits at the intersection of artificial intelligence, cloud computing, research, and learning design. I build programs, technical curriculum, and hands-on experiences that make complex systems usable without stripping away the rigor.",

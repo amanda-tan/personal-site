@@ -27,7 +27,7 @@ export default function Home() {
 
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Builder · Educator · Curious human</p>
+          <p className="eyebrow">AI enablement · Strategy · Education</p>
           <h1>
             Making complex
             <br />
@@ -54,10 +54,10 @@ export default function Home() {
 
       <section className="ticker" aria-label="Areas of practice">
         <div>
-          <span>AI &amp; cloud</span><b>✦</b>
-          <span>Learning design</span><b>✦</b>
-          <span>Clear writing</span><b>✦</b>
-          <span>Playful experiments</span><b>✦</b>
+          <span>National AI programs</span><b>✦</b>
+          <span>Research and higher education</span><b>✦</b>
+          <span>Hands-on technical curriculum</span><b>✦</b>
+          <span>Open-source learning tools</span><b>✦</b>
         </div>
       </section>
 
@@ -82,7 +82,7 @@ export default function Home() {
                 <Image
                   className="card-illustration"
                   src={`${basePath}/images/icon-projects.png`}
-                  alt=""
+                  alt="ChloeLabs educational project illustration"
                   width={380}
                   height={380}
                 />
@@ -98,12 +98,60 @@ export default function Home() {
                 {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
               </ul>
               {"href" in project && (
-                <a href={project.href}>
+                <a
+                  href={project.href}
+                  {...(project.href.startsWith("http")
+                    ? { target: "_blank", rel: "noreferrer" }
+                    : {})}
+                >
                   {project.linkLabel} <Arrow />
                 </a>
               )}
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="consulting-section">
+        <div className="section-shell section consulting-inner">
+          <div className="consulting-intro">
+            <p className="eyebrow">Advisory</p>
+            <h2>Helping organizations turn AI ambition into practical capability.</h2>
+            <p>
+              I work with universities, research organizations, nonprofits, and
+              technical teams that need a clearer path from AI interest to useful
+              implementation.
+            </p>
+          </div>
+          <div className="service-list">
+            <article>
+              <h3>AI strategy and adoption</h3>
+              <p>
+                Practical roadmaps, use-case prioritization, governance, and
+                implementation planning.
+              </p>
+            </article>
+            <article>
+              <h3>Technical enablement</h3>
+              <p>
+                Workshops, curriculum, learning programs, and train-the-trainer
+                models.
+              </p>
+            </article>
+            <article>
+              <h3>Agentic systems and learning tools</h3>
+              <p>
+                Workflow design, prototypes, educational products, and
+                adoption-focused experimentation.
+              </p>
+            </article>
+            <a
+              className="button button-primary"
+              href={`mailto:${profile.email}?subject=Consulting%20Inquiry`}
+            >
+              Discuss a project <Arrow />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -156,8 +204,23 @@ export default function Home() {
         </div>
         <div className="footer-links">
           {profile.links.map((link) => (
-            <a href={link.href} key={link.label}>{link.label} <Arrow /></a>
+            <a
+              href={link.href}
+              key={link.label}
+              {...(link.href.startsWith("http")
+                ? { target: "_blank", rel: "noreferrer" }
+                : {})}
+            >
+              {link.label} <Arrow />
+            </a>
           ))}
+          <a
+            href={`${basePath}/Amanda_Tan_Resume.pdf`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Résumé <Arrow />
+          </a>
         </div>
         <p>© {new Date().getFullYear()} Amanda Tan</p>
       </footer>
