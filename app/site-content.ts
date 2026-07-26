@@ -4,9 +4,9 @@ export const siteContent = {
     intro:
       "I explore how AI, cloud computing, and thoughtful learning experiences can give more people the confidence to build. I like ideas that are rigorous underneath and welcoming on the surface.",
     about: [
-      "I lead AI enablement programs and build practical tools that help people understand, adopt, and use emerging technology. My work sits at the intersection of artificial intelligence, cloud computing, research, and education.",
-      "I have led national programs, developed technical curriculum, supported researchers and institutions, and built hands-on learning experiences designed to make complex systems usable. I care about work that is rigorous underneath and welcoming on the surface.",
-      "I am currently developing ChloeLabs, an educational project that introduces young learners to AI, cloud computing, and computational thinking through small, approachable projects.",
+      "I lead AI enablement programs that help researchers, educators, and organizations turn emerging technology into practical capability.",
+      "My work sits at the intersection of artificial intelligence, cloud computing, research, and learning design. I build programs, technical curriculum, and hands-on experiences that make complex systems usable without stripping away the rigor.",
+      "I am currently building ChloeLabs, an educational project that introduces young learners to AI and cloud computing through small, approachable experiments.",
     ],
     links: [
       { label: "GitHub", href: "https://github.com/amanda-tan" },
@@ -43,11 +43,12 @@ export const siteContent = {
     },
   ],
   now: {
-    updated: "July 2026",
+    updated: "Currently",
+    title: "What I’m building",
     items: [
-      "Turning ChloeLabs from a promising shell into a real learning library",
-      "Collecting better metaphors for AI and cloud systems",
-      "Designing small, friendly ways to learn in public",
+      "Growing ChloeLabs into a practical learning library",
+      "Designing hands-on agentic AI curriculum",
+      "Exploring better ways to teach complex systems",
     ],
   },
 } as const;

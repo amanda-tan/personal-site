@@ -102,7 +102,7 @@ export default function Home() {
       <section className="section-shell section about-grid" id="about">
         <div className="about-copy">
           <p className="eyebrow">About</p>
-          <h2>Curiosity is my favorite working method.</h2>
+          <h2>Making complex technology easier to understand, use, and trust.</h2>
           {profile.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
         <aside className="now-card">
@@ -112,8 +112,8 @@ export default function Home() {
             width={200}
             height={200}
           />
-          <p className="eyebrow">Now / {now.updated}</p>
-          <h3>What has my attention</h3>
+          <p className="eyebrow">{now.updated}</p>
+          <h3>{now.title}</h3>
           <ul>
             {now.items.map((item) => <li key={item}>{item}</li>)}
           </ul>
