@@ -4,10 +4,12 @@ export const siteContent = {
     intro:
       "I help researchers, educators, and organizations turn AI into practical capability through strategy, technical education, and thoughtfully designed learning experiences.",
     about: [
-      "I lead AI enablement programs that help researchers, educators, and organizations turn emerging technology into practical capability.",
-      "My work sits at the intersection of artificial intelligence, cloud computing, research, and learning design. I build programs, technical curriculum, and hands-on experiences that make complex systems usable without stripping away the rigor.",
-      "I am currently building ChloeLabs, an educational project that introduces young learners to AI and cloud computing through small, approachable experiments.",
-    ],
+"I lead national AI enablement programs for the Minority Serving Cyberinfrastructure Consortium (MS-CC) at Internet2, helping researchers, educators, and institutions turn emerging technologies into something people can actually use.
+
+My work lives at the intersection of artificial intelligence, cloud computing, research, and learning design. Over the past decade, I’ve led federally funded research and education initiatives, designed technical curriculum, and built hands-on programs that help people move from curiosity to confidence. I enjoy making complex systems approachable without oversimplifying the ideas behind them.
+
+That same philosophy is what led me to start ChloeLabs. Inspired by my 10-year-old daughter, it’s a side project exploring how AI, cloud computing, and computational thinking can be taught through small, hands-on experiments. It’s an opportunity to rethink how we introduce technical concepts to young learners and, hopefully, help more girls see themselves building the future of technology.",    
+],
     links: [
       { label: "GitHub", href: "https://github.com/amanda-tan" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/atanlehr/" },
