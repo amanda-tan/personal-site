@@ -22,6 +22,11 @@ export const siteContent = {
       description:
         "A learning platform that introduces young people to AI, cloud computing, and computational thinking through short, approachable projects.",
       tags: ["AI literacy", "Cloud", "Learning design"],
+      focus: [
+        "Expanding the lesson library",
+        "Building interactive activities",
+        "Developing educator resources",
+      ],
       href: "https://chloelabs.io",
       linkLabel: "Visit ChloeLabs",
     },
@@ -32,6 +37,11 @@ export const siteContent = {
       description:
         "A hands-on notebook series that helps learners move from conversational AI to tool-using agents, research workflows, memory, and multi-step reasoning.",
       tags: ["Agents", "Python", "Jupyter"],
+      focus: [
+        "Notebook development",
+        "Workshop curriculum",
+        "Learner testing",
+      ],
     },
     {
       title: "AI Enablement at Scale",
@@ -40,6 +50,11 @@ export const siteContent = {
       description:
         "National programs, workshops, and technical resources that help researchers and institutions build practical capability in AI and advanced computing.",
       tags: ["Strategy", "Research", "Education"],
+      focus: [
+        "Regional workshops",
+        "Technical curriculum",
+        "Community building",
+      ],
     },
     {
       title: "AI Strategy & Enablement",
@@ -48,6 +63,11 @@ export const siteContent = {
       description:
         "Advisory support for universities, research organizations, nonprofits, and technical teams developing practical AI adoption strategies, learning programs, and agentic workflows.",
       tags: ["AI strategy", "Enablement", "Workshops"],
+      focus: [
+        "Advisory engagements",
+        "Executive workshops",
+        "AI adoption planning",
+      ],
       href:
         "mailto:amandach.tan@gmail.com?subject=AI%20Strategy%20%26%20Enablement%20Inquiry",
       linkLabel: "Get in touch",

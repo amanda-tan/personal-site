@@ -163,6 +163,13 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 .project-card > a { font-weight: 800; margin-top: 22px; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 14px 0 0; padding: 0; }
 .tag-list li { border: 1px solid currentColor; border-radius: 999px; font-size: 0.7rem; font-weight: 700; padding: 5px 9px; }
+.project-focus { border-top: 1px solid currentColor; margin-top: 24px; padding-top: 18px; }
+.project-focus h4 { font-size: 0.7rem; letter-spacing: 0.1em; margin: 0 0 10px; text-transform: uppercase; }
+.project-focus ul { line-height: 1.55; margin: 0; padding-left: 18px; }
+.project-focus li { font-size: 0.82rem; }
+.work-note { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 28px; }
+.work-note h3 { font-family: var(--font-serif), serif; font-size: 1.7rem; font-weight: 500; margin: 0 0 8px; }
+.work-note p { line-height: 1.7; margin: 0; max-width: 760px; }
 
 .consulting-section { background: var(--paper); border-block: 1px solid var(--line); }
 .consulting-inner { display: grid; gap: 72px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -175,10 +182,12 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
   margin: 0 0 28px;
 }
 .consulting-intro > p:last-child { font-size: 1.08rem; line-height: 1.7; margin: 0; max-width: 560px; }
-.service-list article { border-top: 1px solid var(--ink); padding: 24px 0 26px; }
-.service-list h3 { font-family: var(--font-serif), serif; font-size: 1.7rem; font-weight: 500; margin: 0 0 8px; }
+.service-list { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.service-list article { border: 1px solid var(--ink); border-radius: 18px; padding: 22px; }
+.service-list h3 { font-family: var(--font-serif), serif; font-size: 1.45rem; font-weight: 500; margin: 0 0 8px; }
 .service-list p { line-height: 1.6; margin: 0; }
-.service-list .button { margin-top: 18px; }
+.consulting-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
+.consulting-secondary { border: 1px solid var(--ink); }
 
 .notes-section { background: var(--paper); border-block: 1px solid var(--line); padding-block: 112px; }
 .notes-layout { display: grid; gap: 80px; grid-template-columns: 0.72fr 1.28fr; }
@@ -283,6 +292,7 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
   .section-heading .eyebrow { grid-column: auto; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 460px; }
+  .service-list { grid-template-columns: 1fr; }
   .notes-layout { gap: 54px; }
   .now-card { padding: 108px 28px 28px; }
   .contact-inner { padding-block: 72px; }

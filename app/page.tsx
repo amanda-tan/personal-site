@@ -114,50 +114,87 @@ export default function Home() {
                   {project.linkLabel} <Arrow />
                 </a>
               )}
+              <footer className="project-focus">
+                <h4>Current Focus</h4>
+                <ul>
+                  {project.focus.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </footer>
             </article>
           ))}
         </div>
+        <aside className="work-note">
+          <h3>How I work</h3>
+          <p>
+            I believe successful AI adoption is less about choosing the newest
+            model and more about helping people build confidence, practical
+            skills, and sustainable ways of working.
+          </p>
+        </aside>
       </section>
 
       <section className="consulting-section">
         <div className="section-shell section consulting-inner">
           <div className="consulting-intro">
-            <p className="eyebrow">Advisory</p>
-            <h2>Helping organizations turn AI ambition into practical capability.</h2>
+            <p className="eyebrow">ADVISORY</p>
+            <h2>Helping organizations adopt AI with confidence.</h2>
             <p>
-              I work with universities, research organizations, nonprofits, and
-              technical teams that need a clearer path from AI interest to useful
-              implementation.
+              I partner with universities, research organizations, nonprofits,
+              and technical teams that want to move beyond AI experimentation
+              toward practical implementation. My work combines technical
+              strategy, education, and product thinking to help people build
+              lasting capability.
             </p>
           </div>
-          <div className="service-list">
-            <article>
-              <h3>AI strategy and adoption</h3>
-              <p>
-                Practical roadmaps, use-case prioritization, governance, and
-                implementation planning.
-              </p>
-            </article>
-            <article>
-              <h3>Technical enablement</h3>
-              <p>
-                Workshops, curriculum, learning programs, and train-the-trainer
-                models.
-              </p>
-            </article>
-            <article>
-              <h3>Agentic systems and learning tools</h3>
-              <p>
-                Workflow design, prototypes, educational products, and
-                adoption-focused experimentation.
-              </p>
-            </article>
-            <a
-              className="button button-primary"
-              href={`mailto:${profile.email}?subject=Consulting%20Inquiry`}
-            >
-              Discuss a project <Arrow />
-            </a>
+          <div>
+            <div className="service-list">
+              <article>
+                <h3>AI Strategy</h3>
+                <p>
+                  Develop practical AI roadmaps, identify high-value use cases,
+                  and create realistic adoption plans aligned with
+                  organizational goals.
+                </p>
+              </article>
+              <article>
+                <h3>Technical Enablement</h3>
+                <p>
+                  Design workshops, technical curriculum, and hands-on learning
+                  experiences that build confidence with AI and cloud
+                  technologies.
+                </p>
+              </article>
+              <article>
+                <h3>Agentic AI</h3>
+                <p>
+                  Design educational workflows, prototype agentic systems, and
+                  help teams understand where agents create real value.
+                </p>
+              </article>
+              <article>
+                <h3>Educational Products</h3>
+                <p>
+                  Build learning platforms, open-source resources, and technical
+                  content that make complex technology approachable.
+                </p>
+              </article>
+            </div>
+            <div className="consulting-actions">
+              <a
+                className="button button-primary"
+                href="https://calendly.com/atlehr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule a conversation <Arrow />
+              </a>
+              <a
+                className="button consulting-secondary"
+                href={`mailto:${profile.email}`}
+              >
+                Email me <Arrow />
+              </a>
+            </div>
           </div>
         </div>
       </section>
