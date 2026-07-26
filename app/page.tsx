@@ -105,13 +105,28 @@ export default function Home() {
               </ul>
               {"href" in project && (
                 <a
+                  className={
+                    "notebookCoverage" in project
+                      ? "button button-primary project-primary-cta"
+                      : undefined
+                  }
                   href={project.href}
                   {...(project.href.startsWith("http")
-                    ? { target: "_blank", rel: "noreferrer" }
+                    ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
                 >
                   {project.linkLabel} <Arrow />
                 </a>
+              )}
+              {"notebookCoverage" in project && (
+                <div className="project-secondary-detail">
+                  <p>Notebook series covering:</p>
+                  <ul>
+                    {project.notebookCoverage.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               )}
               <footer className="project-focus">
                 <h4>Current Focus</h4>
@@ -195,6 +210,31 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="writing-section" id="writing">
+        <div className="section-shell section">
+          <div className="section-heading">
+            <p className="eyebrow">Featured Writing</p>
+            <h2>Featured Writing</h2>
+            <p>
+              Thoughts on AI, learning design, and building practical
+              technology.
+            </p>
+          </div>
+          <article className="writing-card">
+            <p className="writing-date">July 26, 2026</p>
+            <h3>The Most Dangerous Person in AI Isn’t the Beginner</h3>
+            <p>
+              AI doesn’t have a shortage of experts. It has a shortage of
+              curiosity. Why asking better questions matters more than learning
+              the latest AI vocabulary.
+            </p>
+            <a href="/writing/the-most-dangerous-person-in-ai-isnt-the-beginner/">
+              Read article →
+            </a>
+          </article>
         </div>
       </section>
 
