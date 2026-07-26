@@ -2,7 +2,7 @@ export const siteContent = {
   profile: {
     email: "amandach.tan@gmail.com",
     intro:
-      "I help organizations build practical capability in AI through strategy, technical education, and tools people can actually use.",
+      "I help researchers, educators, and organizations turn AI into practical capability through strategy, technical education, and thoughtfully designed learning experiences.",
     about: [
       "I lead AI enablement programs that help researchers, educators, and organizations turn emerging technology into practical capability.",
       "My work sits at the intersection of artificial intelligence, cloud computing, research, and learning design. I build programs, technical curriculum, and hands-on experiences that make complex systems usable without stripping away the rigor.",

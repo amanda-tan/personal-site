@@ -19,6 +19,13 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#about">About</a>
+          <a
+            href={`${basePath}/Amanda_Tan_Resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Résumé
+          </a>
           <a className="nav-cta" href={`mailto:${profile.email}`}>
             Say hello <Arrow />
           </a>
@@ -27,7 +34,7 @@ export default function Home() {
 
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">AI enablement · Strategy · Education</p>
+          <p className="eyebrow">AI ENABLEMENT · STRATEGY · EDUCATION</p>
           <h1>
             Making complex
             <br />
@@ -36,7 +43,7 @@ export default function Home() {
           <p className="hero-deck">{profile.intro}</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">
-              Explore my work <span aria-hidden="true">↓</span>
+              View selected work <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
@@ -54,10 +61,10 @@ export default function Home() {
 
       <section className="ticker" aria-label="Areas of practice">
         <div>
-          <span>National AI programs</span><b>✦</b>
-          <span>Research and higher education</span><b>✦</b>
-          <span>Hands-on technical curriculum</span><b>✦</b>
-          <span>Open-source learning tools</span><b>✦</b>
+          <span>AI Enablement</span><b>✦</b>
+          <span>Learning Design</span><b>✦</b>
+          <span>Strategy</span><b>✦</b>
+          <span>Open Source</span><b>✦</b>
         </div>
       </section>
 
@@ -217,7 +224,7 @@ export default function Home() {
           <a
             href={`${basePath}/Amanda_Tan_Resume.pdf`}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Résumé <Arrow />
           </a>
