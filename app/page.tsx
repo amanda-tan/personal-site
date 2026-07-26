@@ -3,9 +3,56 @@ import { siteContent } from "./site-content";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
+const ProfileIcon = ({
+  name,
+}: {
+  name: "briefcase" | "book" | "workflow" | "cooking";
+}) => {
+  const paths = {
+    briefcase: (
+      <>
+        <path d="M4 8.5h16v10H4z" />
+        <path d="M9 8.5V6h6v2.5M4 12h16M10 12v2h4v-2" />
+      </>
+    ),
+    book: (
+      <>
+        <path d="M4.5 5.5h5A2.5 2.5 0 0 1 12 8v11a2.5 2.5 0 0 0-2.5-2.5h-5z" />
+        <path d="M19.5 5.5h-5A2.5 2.5 0 0 0 12 8v11a2.5 2.5 0 0 1 2.5-2.5h5z" />
+      </>
+    ),
+    workflow: (
+      <>
+        <rect x="4" y="4" width="6" height="5" rx="1" />
+        <rect x="14" y="15" width="6" height="5" rx="1" />
+        <path d="M10 6.5h3a4 4 0 0 1 4 4V15M14 17.5h-3a4 4 0 0 1-4-4V9" />
+      </>
+    ),
+    cooking: (
+      <>
+        <path d="M5 10h14v7a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3zM3 10h18" />
+        <path d="M8 7c0-1 1-1.5 1-2.5M12 7c0-1 1-1.5 1-2.5M16 7c0-1 1-1.5 1-2.5" />
+      </>
+    ),
+  };
+
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.6"
+      >
+        {paths[name]}
+      </g>
+    </svg>
+  );
+};
+
 export default function Home() {
   const { profile, projects, now } = siteContent;
-  const nowIcons = ["▤", ">_", "✦"];
   const projectSymbols = ["◎", "↗"];
 
   return (
@@ -255,12 +302,15 @@ export default function Home() {
           <p className="eyebrow">{now.updated}</p>
           <h3>{now.title}</h3>
           <ul className="now-list">
-            {now.items.map((item, index) => (
-              <li key={item}>
+            {now.items.map((item) => (
+              <li key={item.label}>
                 <span className="now-icon" aria-hidden="true">
-                  {nowIcons[index]}
+                  <ProfileIcon name={item.icon} />
                 </span>
-                <span>{item}</span>
+                <span className="now-copy">
+                  <strong>{item.label}</strong>
+                  <span>{item.text}</span>
+                </span>
               </li>
             ))}
           </ul>

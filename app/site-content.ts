@@ -77,11 +77,33 @@ export const siteContent = {
   ],
   now: {
     updated: "Currently",
-    title: "What I’m building",
+    title: "Right now",
     items: [
-      "Growing ChloeLabs into a practical learning library",
-      "Designing hands-on agentic AI curriculum",
-      "Exploring better ways to teach complex systems",
+      {
+        label: "Work",
+        text: "Leading national AI enablement programs at MS-CC.",
+        icon: "briefcase",
+      },
+      {
+        label: "Building",
+        text: "Growing ChloeLabs into a practical learning library for AI and cloud computing.",
+        icon: "book",
+      },
+      {
+        label: "Developing",
+        text: "Open-source agentic AI curriculum for researchers and educators.",
+        icon: "workflow",
+      },
+      {
+        label: "Reading",
+        text: "“We Do Not Part” by Han Kang.",
+        icon: "book",
+      },
+      {
+        label: "Cooking",
+        text: "Via Carota’s Agnello in Gremolata.",
+        icon: "cooking",
+      },
     ],
   },
 } as const;
