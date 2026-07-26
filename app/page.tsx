@@ -6,6 +6,7 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 export default function Home() {
   const { profile, projects, now } = siteContent;
   const basePath = process.env.BASE_PATH ?? "";
+  const nowIcons = ["▤", ">_", "✦"];
 
   return (
     <main>
@@ -114,9 +115,20 @@ export default function Home() {
           />
           <p className="eyebrow">{now.updated}</p>
           <h3>{now.title}</h3>
-          <ul>
-            {now.items.map((item) => <li key={item}>{item}</li>)}
+          <ul className="now-list">
+            {now.items.map((item, index) => (
+              <li key={item}>
+                <span className="now-icon" aria-hidden="true">
+                  {nowIcons[index]}
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
+          <div className="now-location">
+            <span className="now-icon" aria-hidden="true">⌖</span>
+            <span>Seattle, WA</span>
+          </div>
         </aside>
       </section>
 
