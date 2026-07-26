@@ -314,10 +314,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <div className="now-location">
-            <span className="now-icon" aria-hidden="true">⌖</span>
-            <span>Seattle, WA</span>
-          </div>
         </aside>
       </section>
 
