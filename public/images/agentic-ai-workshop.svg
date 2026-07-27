@@ -1,46 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-labelledby="title description">
-  <title id="title">Agentic AI workflow notebook</title>
-  <desc id="description">An open notebook connected to three AI tool nodes with workflow lines and geometric accents.</desc>
+  <title id="title">Agentic AI workshop</title>
+  <desc id="description">An open notebook with a terminal prompt connected to one workflow node and three dots.</desc>
   <circle cx="190" cy="190" r="188" fill="#fffaf0" stroke="#16211f" stroke-width="2"/>
-
-  <g fill="none" stroke="#173f3b" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M108 126C91 122 82 116 74 104" stroke-width="3"/>
-    <path d="M270 128C284 118 293 107 302 93" stroke-width="3"/>
-    <path d="M269 257C288 265 299 276 307 291" stroke-width="3"/>
-    <path d="M81 115l14 2-6 12" stroke-width="2"/>
-    <path d="M292 101l4-13 12 7" stroke-width="2"/>
-    <path d="M294 278l14 2-5 12" stroke-width="2"/>
-  </g>
-
-  <g stroke="#16211f" stroke-width="2.5">
-    <circle cx="65" cy="91" r="29" fill="#88a692"/>
-    <circle cx="315" cy="75" r="29" fill="#f0a15a"/>
-    <circle cx="321" cy="307" r="29" fill="#d9654c"/>
-  </g>
-
   <g fill="none" stroke="#16211f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-    <rect x="49" y="77" width="32" height="25" rx="4"/>
-    <path d="M55 85l6 5-6 5m11 0h8"/>
-    <path d="M307 62l-7 13 10 11m13-24l7 13-10 11"/>
-    <circle cx="321" cy="298" r="5"/>
-    <circle cx="309" cy="316" r="5"/>
-    <circle cx="333" cy="316" r="5"/>
-    <path d="M318 302l-7 10m13-10l7 10m-17 4h14"/>
-  </g>
-
-  <path d="M111 127c28-10 54-6 79 10 25-16 51-20 79-10v137c-27-9-53-5-79 11-26-16-52-20-79-11z" fill="#f6f0e4" stroke="#16211f" stroke-linejoin="round" stroke-width="3"/>
-  <path d="M190 138v137" fill="none" stroke="#16211f" stroke-width="3"/>
-  <path d="M124 153c19-4 36-1 52 8m-52 19c19-4 36-1 52 8m-52 19c19-4 36-1 52 8m-52 19c19-4 36-1 52 8" fill="none" stroke="#173f3b" stroke-linecap="round" stroke-width="2.5"/>
-  <path d="M204 160c16-8 33-11 51-7m-51 35c16-8 33-11 51-7m-51 35c16-8 33-11 51-7m-51 35c16-8 33-11 51-7" fill="none" stroke="#173f3b" stroke-linecap="round" stroke-width="2.5"/>
-
-  <g fill="#f0a15a" stroke="#16211f" stroke-width="2">
-    <path d="M101 297l5 11 11 5-11 5-5 11-5-11-11-5 11-5z"/>
-    <circle cx="275" cy="48" r="6"/>
-    <circle cx="65" cy="242" r="5" fill="#d9654c"/>
-  </g>
-  <g fill="none" stroke="#173f3b" stroke-linecap="round" stroke-width="2">
-    <path d="M82 202h18m-9-9v18"/>
-    <path d="M282 222h16m-8-8v16"/>
-    <path d="M142 74h14m-7-7v14"/>
+    <path d="M93 137c35-10 67-5 97 15 30-20 62-25 97-15v124c-34-9-66-4-97 16-31-20-63-25-97-16z" fill="#f6f0e4"/>
+    <path d="M190 152v125"/>
+    <rect x="116" y="169" width="54" height="40" rx="6" fill="#88a692"/>
+    <path d="M128 181l8 7-8 7m15 0h14"/>
+    <path d="M211 181h50m-50 20h38m-38 20h45"/>
+    <path d="M190 113v39"/>
+    <circle cx="190" cy="91" r="22" fill="#f0a15a"/>
+    <circle cx="183" cy="91" r="3" fill="#16211f"/>
+    <circle cx="190" cy="91" r="3" fill="#16211f"/>
+    <circle cx="197" cy="91" r="3" fill="#16211f"/>
   </g>
 </svg>

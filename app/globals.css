@@ -163,9 +163,9 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 .project-card > a { font-weight: 800; margin-top: 22px; }
 .project-card > .project-cta { align-self: flex-start; }
 .agentic-card .card-illustration {
-  height: 218px;
-  margin-block: 17px 2px;
-  width: 218px;
+  height: 205px;
+  margin: 24px 0 8px;
+  width: 205px;
 }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 14px 0 0; padding: 0; }
 .tag-list li { border: 1px solid currentColor; border-radius: 999px; font-size: 0.7rem; font-weight: 700; padding: 5px 9px; }

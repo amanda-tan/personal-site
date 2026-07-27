@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-labelledby="title description">
+  <title id="title">AI strategy and enablement</title>
+  <desc id="description">A folded roadmap with a compass and connected decision points.</desc>
+  <circle cx="190" cy="190" r="188" fill="#fffaf0" stroke="#16211f" stroke-width="2"/>
+  <g stroke="#16211f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path d="M70 127l78-25 84 25 78-25v153l-78 25-84-25-78 25z" fill="#f6f0e4"/>
+    <path d="M148 102v153m84-128v153" fill="none"/>
+    <path d="M94 231c29-12 35-45 61-57 24-11 43 10 66-2 24-12 33-35 59-44" fill="none" stroke="#173f3b"/>
+    <circle cx="101" cy="227" r="7" fill="#f0a15a"/>
+    <circle cx="170" cy="171" r="7" fill="#88a692"/>
+    <circle cx="237" cy="163" r="7" fill="#d9654c"/>
+    <circle cx="282" cy="128" r="7" fill="#f0a15a"/>
+    <circle cx="196" cy="218" r="43" fill="#88a692"/>
+    <circle cx="196" cy="218" r="27" fill="#fffaf0"/>
+    <path d="M187 229l10-25 9 18z" fill="#d9654c"/>
+    <circle cx="196" cy="218" r="3" fill="#16211f"/>
+  </g>
+</svg>

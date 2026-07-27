@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-labelledby="title description">
+  <title id="title">AI enablement at scale</title>
+  <desc id="description">Three universities connected through one shared learning cloud.</desc>
+  <circle cx="190" cy="190" r="188" fill="#fffaf0" stroke="#16211f" stroke-width="2"/>
+  <g fill="none" stroke="#16211f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path d="M190 142v48M126 174l25 20M254 174l-25 20" stroke="#173f3b"/>
+    <path d="M147 126c0-17 14-31 31-31 9 0 18 4 23 11 6-5 13-8 21-8 18 0 32 14 32 32 0 3 0 6-1 8h-94c-7 0-12-5-12-12z" fill="#88a692"/>
+    <g fill="#f0a15a">
+      <path d="M67 222h92l-46-28z"/>
+      <path d="M78 229v54m23-54v54m23-54v54m23-54v54M67 289h92"/>
+    </g>
+    <g fill="#f6f0e4">
+      <path d="M144 222h92l-46-28z"/>
+      <path d="M155 229v54m23-54v54m23-54v54m23-54v54M144 289h92"/>
+    </g>
+    <g fill="#d9654c">
+      <path d="M221 222h92l-46-28z"/>
+      <path d="M232 229v54m23-54v54m23-54v54m23-54v54M221 289h92"/>
+    </g>
+  </g>
+</svg>

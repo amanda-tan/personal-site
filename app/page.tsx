@@ -53,7 +53,6 @@ const ProfileIcon = ({
 
 export default function Home() {
   const { profile, projects, now } = siteContent;
-  const projectSymbols = ["◎", "↗"];
 
   return (
     <main>
@@ -139,8 +138,8 @@ export default function Home() {
               {index === 0 && (
                 <Image
                   className="card-illustration"
-                  src="/images/icon-projects.png"
-                  alt="ChloeLabs educational project illustration"
+                  src="/images/chloelabs-project.svg"
+                  alt="ChloeLabs"
                   width={380}
                   height={380}
                 />
@@ -149,15 +148,27 @@ export default function Home() {
                 <Image
                   className="card-illustration"
                   src="/images/agentic-ai-workshop.svg"
-                  alt="An open notebook connected to AI tool nodes in a workflow"
+                  alt="An open notebook, terminal prompt, and connected workflow node"
                   width={380}
                   height={380}
                 />
               )}
               {index > 1 && (
-                <div className="card-symbol" aria-hidden="true">
-                  {projectSymbols[index - 2]}
-                </div>
+                <Image
+                  className="card-illustration"
+                  src={
+                    index === 2
+                      ? "/images/ai-enablement-at-scale.svg"
+                      : "/images/ai-strategy-enablement.svg"
+                  }
+                  alt={
+                    index === 2
+                      ? "Three universities connected through a shared learning cloud"
+                      : "A folded roadmap, compass, and connected decision points"
+                  }
+                  width={380}
+                  height={380}
+                />
               )}
               <h3>{project.title}</h3>
               <p>{project.description}</p>
