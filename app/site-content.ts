@@ -20,7 +20,7 @@ export const siteContent = {
       kind: "Educational product",
       status: "Active",
       description:
-        "A learning platform that introduces young people to AI, cloud computing, and computational thinking through short, approachable projects.",
+        "A place where curious kids build projects, explore ideas, and create a portfolio that grows with them.",
       tags: ["AI literacy", "Cloud", "Learning design"],
       focus: [
         "Expanding the lesson library",
