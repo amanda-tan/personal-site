@@ -11,5 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://amanda-tan.io/writing/the-most-dangerous-person-in-ai-isnt-the-beginner",
       lastModified: "2026-07-26",
     },
+    {
+      url: "https://amanda-tan.io/writing/higher-education-doesnt-need-an-ai-strategy",
+      lastModified: "2026-07-27",
+    },
   ];
 }

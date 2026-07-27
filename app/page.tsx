@@ -283,6 +283,19 @@ export default function Home() {
               Read article →
             </a>
           </article>
+          <article className="writing-card">
+            <p className="writing-date">July 27, 2026</p>
+            <h3>Higher Education Doesn’t Need an AI Strategy</h3>
+            <p>
+              AI adoption does not begin with procurement, policy, or training.
+              It begins with the moment someone stops thinking about the
+              technology and starts imagining what it could make possible in
+              their own work.
+            </p>
+            <a href="/writing/higher-education-doesnt-need-an-ai-strategy/">
+              Read article →
+            </a>
+          </article>
         </div>
       </section>
 

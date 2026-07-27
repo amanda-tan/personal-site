@@ -214,6 +214,7 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 }
 .writing-card > p:not(.writing-date) { line-height: 1.7; margin: 0; max-width: 680px; }
 .writing-card a { display: inline-block; font-weight: 800; margin-top: 20px; }
+.writing-card + .writing-card { border-top: 0; }
 
 .article-shell { padding-block: 84px 112px; }
 .article-header, .article-body, .article-back { margin-inline: auto; max-width: 760px; }
