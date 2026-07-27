@@ -144,6 +144,13 @@ nav a:hover, .footer-links a:hover { color: var(--coral); }
 .card-4 { background: var(--paper); }
 .card-topline { display: flex; font-size: 0.72rem; font-weight: 800; justify-content: space-between; letter-spacing: 0.08em; text-transform: uppercase; }
 .card-illustration { align-self: center; border-radius: 50%; height: 205px; margin: 24px 0 8px; object-fit: cover; width: 205px; }
+.chloelabs-illustration {
+  background: #fffaf0;
+  border: 1px solid var(--ink);
+  box-sizing: border-box;
+  object-fit: contain;
+  padding: 30px;
+}
 .card-symbol {
   align-items: center;
   align-self: center;
