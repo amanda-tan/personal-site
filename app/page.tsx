@@ -138,8 +138,8 @@ export default function Home() {
               {index === 0 && (
                 <Image
                   className="card-illustration chloelabs-illustration"
-                  src="/images/CL_Logo-2.svg"
-                  alt="ChloeLabs"
+                  src="/images/chloelabs-mark.png"
+                  alt="ChloeLabs dog illustration"
                   width={380}
                   height={380}
                 />
